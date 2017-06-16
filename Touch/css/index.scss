@@ -98,14 +98,10 @@ $c: 20;
         display: flex;
         flex-direction: column;
     }
-    footer {
+   footer {
         width:16rem;
-        height: 2.5rem;
         background: #EBEBEB;
         border-top: 1px solid #aaa;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         ul {
             @extend %gdw;
             display: flex;
@@ -121,28 +117,23 @@ $c: 20;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    justify-content: center;
+                    padding:5/$c+rem 0;
                     p{
-                        height: 22/$c+rem;
-                        width:26/$c+rem;
+                        height: 20/$c+rem;
+                        width:20/$c+rem;
                         display: block;
-                        background: url(../img/footer/envelope.png) no-repeat 0 4/$c+rem;
-                        background-size: 100% 75%;
+                        background: url(../img/footer/envelope.png) no-repeat 0 8/$c+rem;
+                        background-size: 100% 50%;
                     }
-//                  i {
-//                      color: #fff;
-//                      font-size: 16/$c+rem;
-//                      text-shadow: 0 0 1px #000;
-//                  }
                     span {
                         color: $gray;
-                        font-size: 14/$c+rem;
+                        font-size: 10/$c+rem;
                     }
                 }
                 &:nth-child(2){
                     a{
                         p{
-                            width:22/$c+rem;
+                            width:20/$c+rem;
                             background: url(../img/footer/circle.png) no-repeat;
                             background-size: 100% 100%;
                         }
@@ -151,15 +142,15 @@ $c: 20;
                 &:nth-child(3){
                     a{
                         p{
-                            background: url(../img/footer/video.png) no-repeat 0 4/$c+rem;
-                            background-size: 100% 75%;
+                            background: url(../img/footer/video.png) no-repeat 0 8/$c+rem;
+                            background-size: 100% 50%;
                         }
                     }
                 }
                 &:nth-child(4){
                     a{
                         p{
-                            width:22/$c+rem;
+                            width:20/$c+rem;
                             background: url(../img/footer/user.png) no-repeat;
                             background-size: 100% 100%;
                         }
