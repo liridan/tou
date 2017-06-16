@@ -1,5 +1,5 @@
-section .home-con { margin-left: -16rem; }
-section .home-con .scribe { overflow-y: auto; }
+section .home-con { margin-left: -16rem; overflow-y: auto; }
+section .home-con .scribe { height: auto; }
 section .home-con .scribe .msg { padding: 2rem 1.5rem 0; box-sizing: border-box; }
 section .home-con .scribe .msg h4 { font-size: 0.7rem; color: #767676; border-bottom: 1px solid #DFDFDF; }
 section .home-con .scribe .list { padding: 1rem 1.5rem 0; width: 16rem; overflow-x: hidden; box-sizing: border-box; box-sizing: border-box; }

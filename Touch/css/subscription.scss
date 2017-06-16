@@ -10,8 +10,9 @@ $c: 20;
 section {
     .home-con {
         margin-left: -16rem;
+        overflow-y: auto;
         .scribe {
-            overflow-y: auto;
+            height: auto;
             .msg {
                 padding: 40/$c+rem 30/$c+rem 0;
                 box-sizing: border-box;
