@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: PingFang SC Regular,Arial,Helvetica,sans-serif;
+}
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+$yellow: #FCDF19;
+$gray: #818181;
+$bg:#EBEBEB;
+$c: 20;
+
+%gdw {
+    width: 16rem;
+    height: 100%;
+}
+
+.fl-lt {
+    float: left;
+}
+
+.fl-rt {
+    float: right;
+}
+
+.container {
+    width: 66rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: $bg;
+    header {
+        width: 16rem;
+        height: 2.5rem;
+        background: $yellow;
+        border-bottom: 1px solid #aaa;
+        .head {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            font-size: 16/$c+rem;
+            align-items: center;
+            li {
+                flex: 1;
+                text-align: center;
+                font-weight: bold;
+                color: $gray;
+                &:first-child {
+                    text-align: right;
+                }
+                &:last-child {
+                    text-align: left;
+                    a{
+                        color:$gray;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        line-height: 100%;
+                    }
+                    i {
+                        margin-top: 5/$c+rem;
+                    }
+                }
+            }
+            .active {
+                span {
+                    position: relative;
+                    color:#333; 
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        height:2/$c+rem;
+                        background:#333;
+                        position: absolute;
+                        left: 0;
+                        bottom:-6/$c+rem;
+                    }
+                }
+            }
+        }
+    }
+    section {
+        flex: 1;
+        width: 16rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        width:16rem;
+        height: 2.5rem;
+        background: #EBEBEB;
+        border-top: 1px solid #aaa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul {
+            @extend %gdw;
+            display: flex;
+            .active {
+                background: $yellow;
+            }
+            li {
+                flex: 1;
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        height: 22/$c+rem;
+                        width:26/$c+rem;
+                        display: block;
+                        background: url(../img/footer/envelope.png) no-repeat 0 4/$c+rem;
+                        background-size: 100% 75%;
+                    }
+//                  i {
+//                      color: #fff;
+//                      font-size: 16/$c+rem;
+//                      text-shadow: 0 0 1px #000;
+//                  }
+                    span {
+                        color: $gray;
+                        font-size: 14/$c+rem;
+                    }
+                }
+                &:nth-child(2){
+                    a{
+                        p{
+                            width:22/$c+rem;
+                            background: url(../img/footer/circle.png) no-repeat;
+                            background-size: 100% 100%;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    a{
+                        p{
+                            background: url(../img/footer/video.png) no-repeat 0 4/$c+rem;
+                            background-size: 100% 75%;
+                        }
+                    }
+                }
+                &:nth-child(4){
+                    a{
+                        p{
+                            width:22/$c+rem;
+                            background: url(../img/footer/user.png) no-repeat;
+                            background-size: 100% 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

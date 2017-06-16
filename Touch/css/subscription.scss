@@ -1,0 +1,96 @@
+$yellow: #FCDF19;
+$gray: #818181;
+$c: 20;
+
+%gdw {
+    width: 16rem;
+    height: 100%;
+}
+
+section {
+    .home-con {
+        margin-left: -16rem;
+        .scribe {
+            overflow-y: auto;
+            .msg {
+                padding: 40/$c+rem 30/$c+rem 0;
+                box-sizing: border-box;
+                h4 {
+                    font-size: 14/$c+rem;
+                    color: #767676;
+                    border-bottom: 1px solid #DFDFDF;
+                }
+            }
+            .list {
+                padding: 20/$c+rem 30/$c+rem 0;
+                width: 16rem;
+                overflow-x: hidden;
+                box-sizing: border-box;
+                box-sizing: border-box;
+                li {
+                    height: 20/$c+rem;
+                    line-height: 20/$c+rem;
+                    float: left;
+                    width: 54/$c+rem;
+                    margin-right: 12/$c+rem;
+                    margin-bottom: 8/$c+rem;
+                    font-size: 12/$c+rem;
+                    border: 1px solid #999;
+                    border-radius: 3/$c+rem;
+                    box-sizing: border-box;
+                    &:nth-child(4n) {
+                        margin-right: 0;
+                    }
+                    span {
+                        float: left;
+                        margin-left: 2/$c+rem;
+                        color: #3F3F3F;
+                    }
+                    img {
+                        float: right;
+                        margin: 3/$c+rem 2/$c+rem 0 0;
+                        width: 12/$c+rem;
+                        height: 12/$c+rem;
+                        line-height: 12/$c+rem;
+                        font-size: 16/$c+rem;
+                    }
+                }
+            }
+            .list2 {
+                padding: 20/$c+rem 30/$c+rem 0;
+                width: 16rem;
+                overflow-x: hidden;
+                box-sizing: border-box;
+                li {
+                    height: 20/$c+rem;
+                    line-height: 20/$c+rem;
+                    float: left;
+                    width: 54/$c+rem;
+                    margin-right: 12/$c+rem;
+                    margin-bottom: 8/$c+rem;
+                    font-size: 12/$c+rem;
+                    border: 1px solid #999;
+                    border-radius: 3/$c+rem;
+                    box-sizing: border-box;
+                    &:nth-child(4n) {
+                        margin-right: 0;
+                    }
+                    span {
+                        float: left;
+                        margin-left: 2/$c+rem;
+                        color: #3F3F3F;
+                    }
+                    img {
+                        float: right;
+                        margin: 3/$c+rem 2/$c+rem 0 0;
+                        width: 12/$c+rem;
+                        height: 12/$c+rem;
+                        display: inline-block;
+                        line-height: 12/$c+rem;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

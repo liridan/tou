@@ -1,0 +1,25 @@
+$yellow: #FCDF19;
+$gray: #818181;
+$bg:#EBEBEB;
+$c: 20;
+
+%gdw {
+    width: 16rem;
+    height: 100%;
+}
+
+.home-con {
+    flex: 1;
+    width: 32rem;
+    height: 100%;
+    display: flex;
+    .topline {
+        @extend %gdw;
+        background: #ccc;
+        overflow-y: auto;
+    }
+    .scribe {
+        @extend %gdw;
+        overflow-y: auto;
+    }
+}

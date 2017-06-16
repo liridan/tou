@@ -1,0 +1,37 @@
+* { margin: 0; padding: 0; font-family: PingFang SC Regular,Arial,Helvetica,sans-serif; }
+
+body, html { width: 100%; height: 100%; overflow: hidden; }
+
+li { list-style: none; }
+
+a { text-decoration: none; color: #000; }
+
+.container footer ul { width: 16rem; height: 100%; }
+
+.fl-lt { float: left; }
+
+.fl-rt { float: right; }
+
+.container { width: 66rem; height: 100%; display: flex; flex-direction: column; background: #EBEBEB; }
+.container header { width: 16rem; height: 2.5rem; background: #FCDF19; border-bottom: 1px solid #aaa; }
+.container header .head { width: 100%; height: 100%; display: flex; font-size: 0.8rem; align-items: center; }
+.container header .head li { flex: 1; text-align: center; font-weight: bold; color: #818181; }
+.container header .head li:first-child { text-align: right; }
+.container header .head li:last-child { text-align: left; }
+.container header .head li:last-child a { color: #818181; display: block; width: 100%; height: 100%; line-height: 100%; }
+.container header .head li:last-child i { margin-top: 0.25rem; }
+.container header .head .active span { position: relative; color: #333; }
+.container header .head .active span::after { content: ""; display: block; width: 100%; height: 0.1rem; background: #333; position: absolute; left: 0; bottom: -0.3rem; }
+.container section { flex: 1; width: 16rem; overflow: hidden; display: flex; flex-direction: column; }
+.container footer { width: 16rem; height: 2.5rem; background: #EBEBEB; border-top: 1px solid #aaa; display: flex; justify-content: center; align-items: center; }
+.container footer ul { display: flex; }
+.container footer ul .active { background: #FCDF19; }
+.container footer ul li { flex: 1; }
+.container footer ul li a { display: block; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.container footer ul li a p { height: 1.1rem; width: 1.3rem; display: block; background: url(../img/footer/envelope.png) no-repeat 0 0.2rem; background-size: 100% 75%; }
+.container footer ul li a span { color: #818181; font-size: 0.7rem; }
+.container footer ul li:nth-child(2) a p { width: 1.1rem; background: url(../img/footer/circle.png) no-repeat; background-size: 100% 100%; }
+.container footer ul li:nth-child(3) a p { background: url(../img/footer/video.png) no-repeat 0 0.2rem; background-size: 100% 75%; }
+.container footer ul li:nth-child(4) a p { width: 1.1rem; background: url(../img/footer/user.png) no-repeat; background-size: 100% 100%; }
+
+/*# sourceMappingURL=index.css.map */
