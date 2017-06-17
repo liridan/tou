@@ -2,15 +2,10 @@ section .home-con { margin-left: -16rem; overflow-y: auto; }
 section .home-con .scribe { height: auto; }
 section .home-con .scribe .msg { padding: 2rem 1.5rem 0; box-sizing: border-box; }
 section .home-con .scribe .msg h4 { font-size: 0.7rem; color: #767676; border-bottom: 1px solid #DFDFDF; }
-section .home-con .scribe .list { padding: 1rem 1.5rem 0; width: 16rem; overflow-x: hidden; box-sizing: border-box; box-sizing: border-box; }
-section .home-con .scribe .list li { height: 1rem; line-height: 1rem; float: left; width: 2.7rem; margin-right: 0.6rem; margin-bottom: 0.4rem; font-size: 0.6rem; border: 1px solid #999; border-radius: 0.15rem; box-sizing: border-box; }
-section .home-con .scribe .list li:nth-child(4n) { margin-right: 0; }
-section .home-con .scribe .list li span { float: left; margin-left: 0.1rem; color: #3F3F3F; }
-section .home-con .scribe .list li img { float: right; margin: 0.15rem 0.1rem 0 0; width: 0.6rem; height: 0.6rem; line-height: 0.6rem; font-size: 0.8rem; }
-section .home-con .scribe .list2 { padding: 1rem 1.5rem 0; width: 16rem; overflow-x: hidden; box-sizing: border-box; }
-section .home-con .scribe .list2 li { height: 1rem; line-height: 1rem; float: left; width: 2.7rem; margin-right: 0.6rem; margin-bottom: 0.4rem; font-size: 0.6rem; border: 1px solid #999; border-radius: 0.15rem; box-sizing: border-box; }
-section .home-con .scribe .list2 li:nth-child(4n) { margin-right: 0; }
-section .home-con .scribe .list2 li span { float: left; margin-left: 0.1rem; color: #3F3F3F; }
-section .home-con .scribe .list2 li img { float: right; margin: 0.15rem 0.1rem 0 0; width: 0.6rem; height: 0.6rem; display: inline-block; line-height: 0.6rem; font-size: 16px; }
+section .home-con .scribe .alllist { padding: 0.75rem 1.5rem 0; width: 16rem; overflow-x: hidden; box-sizing: border-box; }
+section .home-con .scribe .alllist li { height: 1rem; line-height: 1rem; float: left; width: 2.8rem; margin-right: 0.6rem; margin-bottom: 0.4rem; font-size: 0.6rem; border: 1px solid #999; border-radius: 0.15rem; box-sizing: border-box; }
+section .home-con .scribe .alllist li:nth-child(4n) { margin-right: 0; }
+section .home-con .scribe .alllist li span { float: left; margin-left: 0.1rem; color: #3F3F3F; }
+section .home-con .scribe .alllist li img { float: right; margin: 0.15rem 0.1rem 0 0; width: 0.6rem; height: 0.6rem; display: inline-block; line-height: 0.6rem; font-size: 0.8rem; }
 
 /*# sourceMappingURL=subscription.css.map */
