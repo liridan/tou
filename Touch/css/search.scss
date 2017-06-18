@@ -124,17 +124,17 @@ section {
             }
             .list2{
                 padding: 15/$c+rem 30/$c+rem 0;
-                width: 17rem;
-                overflow-x:hidden ;
+                width: 18rem;
+                overflow:hidden
                 box-sizing: border-box;
                 li{
                     height: 20/$c+rem;
                     line-height: 20/$c+rem;
                     width: 122/$c+rem;
                     float: left;
-                    margin-right: 12/$c+rem;
-                    margin-bottom: 16/$c+rem;
-                    font-size: 12/$c+rem;
+                    margin-right: 20/$c+rem;
+                    margin-bottom: 20/$c+rem;
+                    font-size: 8/$c+rem;
                     border: 1px solid #999;                    
                     border-radius: 3/$c+rem;
                     box-sizing: border-box;
