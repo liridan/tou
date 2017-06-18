@@ -1,14 +1,104 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>触控时讯-搜索页</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script>
+			document.getElementsByTagName("html")[0].style.fontSize = innerWidth / 16 + "px";
+		</script>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/search.css" />
 	</head>
+
 	<body>
-		<div class="top">
+		<div class="container">
 			<header>
-            <img src="img/jkh.jpg">
-			</header>			
+	         <a href="../imdex.html" id="back"></a>
+             <div id="search">
+             	<img src="img/liridan/homes.png" />
+             	<input type="search" name="txt"  value="" class="blur"placeholder="请输入关键字..." />
+             	<img src="img/liridan/sys.png" />
+             </div>
+             <a href="" id="cancel">搜索</a>
+			</header>
+			<section>
+				<ul class="entsk">
+					<li class="enstsk">
+						<div class="history">
+							<h4>历史记录</h4>
+						</div>
+						<ul class="list">
+
+						</ul>
+						<div class="history">
+							<h4>热门搜索</h4>
+						</div>
+						<ul class="list2">
+							<li>
+								<span>儿子太帅被求出道</span>
+							</li>
+							<li>
+								<span>环保区域限购再度升级</span>
+							</li>
+							<li>
+								<span>勒索病毒肆虐高校</span>
+							</li>
+							<li>
+								<span>MP3格式正式终结</span>
+							</li>
+							<li>
+								<span>蓝鲸发明者终入狱</span>
+							</li>								
+							<li>
+								<span>假冒僧人强行化缘</span>
+							</li>
+							<li>
+								<span>韩国总统保镖爆红</span>
+							</li>
+							<li>
+								<span>女童饭店叫喊被踹</span>
+							</li>								
+						</ul>
+					</li>
+				</ul>
+
+			</section>
+			<footer>
+				<ul id="footlist">
+					<li class="active">
+						<a href="index.html">
+							<p></p>
+							<span>时讯</span>
+						</a>
+					</li>
+					<li>
+						<a href="circle.html">
+							<p></p>
+							<span>视频</span>
+						</a>
+
+					</li>
+					<li>
+						<a href="video.html">
+							<p></p>
+							<span>直播</span>
+						</a>
+
+					</li>
+					<li>
+						<a>
+							<p></p>
+							<span>我的</span>
+						</a>
+
+					</li>
+				</ul>
+			</footer>
 		</div>
 	</body>
+
 </html>
