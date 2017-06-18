@@ -92,7 +92,7 @@ section {
         .enstsk {
             width: 16rem;
             background: #F4F4F4;
-//          overflow-y: auto;
+             overflow-y:hidden;
             height: auto;
             .history {
                 padding: 40/$c+rem 30/$c+rem 0;
@@ -124,27 +124,23 @@ section {
             }
             .list2{
                 padding: 15/$c+rem 30/$c+rem 0;
-                width: 18rem;
-                overflow:hidden
+                width: 16rem;
+                overflow-x:hidden ;
                 box-sizing: border-box;
                 li{
-                    height: 20/$c+rem;
-                    line-height: 20/$c+rem;
                     width: 122/$c+rem;
                     float: left;
-                    margin-right: 20/$c+rem;
+                    margin-right:14/$c+rem;
                     margin-bottom: 20/$c+rem;
-                    font-size: 8/$c+rem;
-                    border: 1px solid #999;                    
-                    border-radius: 3/$c+rem;
-                    box-sizing: border-box;
-                    &:nth-child(4n) {
+                    &:nth-child(2n) {
                         margin-right: 0;
                     }
                     span{
-                        float: left;                        
-                        margin-left: 4/$c+rm;
                         color:#494949 ;
+                        border: 1px solid #999;
+                        padding:5/$c+rem;
+                        border-radius: 3/$c+rem;
+                        font-size: 8/$c+rem;
                     }
                 }
             }
