@@ -48,6 +48,9 @@ $(function(){
 		$("#eliminate").click(function(){
 			$("#list").empty("");
 		})
+		$("#txt").click(function(){
+		  $(this).attr("placeholder","");
+		})
 	  	
 	})
 })
