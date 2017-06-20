@@ -78,8 +78,8 @@ header {
        #cancel{
               position:absolute;
               top:14/$c+rem;
-              right: 16/$c+rem;
-//            font-size: 13/$c+rem;
+              right: 18/$c+rem;
+              font-size: 12/$c+rem;
               color: #524E32;   
        }      
 }
@@ -90,13 +90,12 @@ section {
         height: 100%;
         display: flex;
         position: relative;
-        overflow-y: auto;
+        overflow-x: auto;
         .enstsk {
             width: 16rem;
             background: #F4F4F4;
-            overflow-y:hidden;
+            overflow-x:hidden;
             height: auto;
-
             .history {
                 padding: 40/$c+rem 30/$c+rem 0;
                 box-sizing: border-box;
@@ -104,28 +103,16 @@ section {
                     font-size: 14/$c+rem;
                     color: #A6A6A6;
                     border-bottom: 1px solid #DFDFDF;
-                }
-            }
-            .list {
-                padding: 15/$c+rem 30/$c+rem 0;
-                width: 16rem;
-                overflow-x: hidden;
-                box-sizing: border-box;
-                li {
-                    height: 20/$c+rem;
-                    line-height: 20/$c+rem;
                     float: left;
-                    width: 56/$c+rem;
-                    margin-right: 12/$c+rem;
-                    margin-bottom: 8/$c+rem;
-                    font-size: 12/$c+rem;
-                    box-sizing: border-box;
-                    &:nth-child(4n) {
-                        margin-right: 0;
-                    }
+                }
+                img{
+                   float: right;
+                   width: 20/$c+rem; 
+                   height: 20/$c+rem; 
+                   cursor: pointer;
                 }
             }
-            .list2{
+            .list{
                 padding: 15/$c+rem 30/$c+rem 0;
                 width: 16rem;
                 overflow-x:hidden ;
@@ -152,7 +139,6 @@ section {
                 position:absolute;
                 top:1/$c+rem;  
                 background: #F4F4F4;  
-
               li{
                   height: 32/$c+rem;
                   line-height:30/$c+rem;

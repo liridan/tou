@@ -4,11 +4,9 @@ $(function(){
 		if($(this).val()!=""){
 			$.getJSON("https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+$(this).val()+"&cb=?"
 			,function(data){
-//				console.log(data)
 			var datas=data.s;
 				var Wt=txt.value;
 					var t="<span style='color:red'>"+Wt+"</span>";
-//					console.log(t);
 				$.each(data.s,function(index,ele){
 					$("<li>").html("<img src='img/liridan/homes.png'/><span class='text'>"+ele.replace(new RegExp(Wt,"g"),t)+"</span>").click(function(){
 						$("#txt").val(ele);
@@ -21,6 +19,7 @@ $(function(){
 		}
 	})	
 	
+	var newstr="";
 	$("#cancel").click(function(){
 		$("#show").html("");
 		var arr="";
@@ -38,7 +37,17 @@ $(function(){
 						$("#show").html(arr);
 					}
 				}
-			}); 	
+			}); 
+		console.log($("#txt").val());
+		newstr="<li><span>"+$("#txt").val()+"</span></li>"+newstr;
+		console.log(newstr);
+		$("#list").html(newstr);
+		if($("#list li").length>10){
+			$("#list li:gt(9)").remove();
+		}
+		$("#eliminate").click(function(){
+			$("#list").empty("");
+		})
 	  	
 	})
 })
