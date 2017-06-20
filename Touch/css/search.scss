@@ -126,11 +126,19 @@ section {
                         margin-right: 0;
                     }
                     span{
+                        width: 120/$c+rem;
+                        height: 40/$c+rem;
+                        line-height: 40/$c+rem;
                         color:#494949 ;
                         border: 1px solid #999;
-                        padding:5/$c+rem;
+                        padding:0 5/$c+rem;
                         border-radius:4/$c+rem;
                         font-size: 9/$c+rem;
+                        overflow: hidden;
+                        display:-webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp:1;
+                        box-sizing: border-box;
                     }
                 }
             }
