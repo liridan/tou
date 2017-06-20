@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
 		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/search.js" ></script>
 		<script>
 			document.getElementsByTagName("html")[0].style.fontSize = innerWidth / 16 + "px";
 		</script>
@@ -20,10 +21,10 @@
 	         <a href="../imdex.html" id="back"></a>
              <div id="search">
              	<img src="img/liridan/homes.png" />
-             	<input type="search" name="txt"  value="" class="blur"placeholder="请输入关键字..." />
+             	<input type="search"   id="txt" value="" class="blur"placeholder="请输入关键字..." />
              	<img src="img/liridan/sys.png" />
              </div>
-             <a href="" id="cancel">搜索</a>
+             <div id="cancel">搜索</div>
 			</header>
 			<section>
 				<ul class="entsk">
@@ -63,6 +64,12 @@
 								<span>女童饭店叫喊被踹</span>
 							</li>								
 						</ul>
+                         <ul id="show">
+                         	
+                         </ul>
+	                     <ul id="show1">
+
+	                     </ul>
 					</li>
 				</ul>
 
