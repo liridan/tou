@@ -127,13 +127,13 @@ section {
                     }
                     span{
                         width: 120/$c+rem;
-                        height: 40/$c+rem;
-                        line-height: 40/$c+rem;
+                        height: 34/$c+rem;
+                        line-height: 34/$c+rem;
                         color:#494949 ;
                         border: 1px solid #999;
                         padding:0 5/$c+rem;
                         border-radius:4/$c+rem;
-                        font-size: 9/$c+rem;
+                        font-size: 11/$c+rem;
                         overflow: hidden;
                         display:-webkit-box;
                         -webkit-box-orient: vertical;
@@ -148,7 +148,7 @@ section {
                 top:1/$c+rem;  
                 background: #F4F4F4;  
               li{
-                  height: 32/$c+rem;
+                  height: 30/$c+rem;
                   line-height:30/$c+rem;
                   width:16rem;
                   border-bottom: 1px solid #DFDFDF;
