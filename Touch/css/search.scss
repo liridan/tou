@@ -154,12 +154,12 @@ section {
                 background: #F4F4F4;  
 
               li{
-                  height: 30/$c+rem;
+                  height: 32/$c+rem;
                   line-height:30/$c+rem;
                   width:16rem;
                   border-bottom: 1px solid #DFDFDF;
                   font-size: 12/$c+rem;
-                  
+                  margin-bottom: 2/$c+rem;
                   a{
                       width: 16rem;
                       height: 100%;
@@ -188,39 +188,7 @@ section {
                 }                   
               } 
             }
-             #show1{
-                width: 16/$c+rme;
-                position:absolute;
-                top:1/$c+rem;  
-                background: #F4F4F4;  
-              li{
-                  height: 70/$c+rem;
-                  line-height:70/$c+rem;
-                  width:16rem;
-                  border-bottom: 1px solid #DFDFDF;
-                  font-size: 12/$c+rem;
-                  display: flex;
-                  a{
-                      display: block;
-                  }
-                    span{
-                        color:#A6A6A6;
-                        font-size: 12/$c+rem;
-                        margin-left:24/$c+rem;
-                    }
-                img{
-                    width:4rem;
-                    height:3rem;
-                }
-                p{
-                    margin-left:-90/$c+rem;
-                   
-                } 
-                &:nth-child(2n){
-                    background: #f1f1f1;
-                }                   
-              } 
-            }           
+          
         }
     }
 }
