@@ -1,0 +1,11 @@
+.container header { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; position: relative; }
+.container header a img { width: 0.8rem; margin: 0 0.5rem 0 1rem; }
+.container header span { font-size: 0.7rem; color: #333; }
+.container header .sous { position: absolute; right: 1rem; }
+.container header .sous i { font-size: 0.7rem; color: #999; }
+.container section { color: #333; font-size: 0.7rem; }
+.container section .head { width: 16rem; height: 1.3rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; padding: 0 0.5rem; margin-top: 0.75rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.container section .head span { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; height: 100%; line-height: 1.3rem; background: #F4E482; text-align: center; color: #666; }
+.container section .head span:first-child { -webkit-border-bottom-left-radius: 0.3rem; border-bottom-left-radius: 0.3rem; -webkit-border-top-left-radius: 0.3rem; border-top-left-radius: 0.3rem; }
+.container section .head span:last-child { -webkit-border-bottom-right-radius: 0.3rem; border-bottom-right-radius: 0.3rem; -webkit-border-top-right-radius: 0.3rem; border-top-right-radius: 0.3rem; }
+.container section .head .active { color: #333; background: #FCDF19; font-weight: bold; }

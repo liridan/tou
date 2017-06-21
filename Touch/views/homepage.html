@@ -1,0 +1,30 @@
+<div class="content">
+	<header>
+		<ul class="head">
+			<li class="active" id="topline">
+				<a>头条</a>
+			</li>
+			<li id="subscribe"><a href="#!subscr">订阅</a></li>
+			<li id="search">
+				<a href="search.html"><img src="img/homes.png"/></a>
+			</li>
+		</ul>
+	</header>
+	<div class="topline" ng-controller="homecont">
+		<ol class="news">
+		 	<li ng-repeat="v in list">
+		 		<a href="{{v.surl}}" class="link">
+		 			<img src="{{v.thumb}}" />
+					<div class="info">
+						<h6>{{v.title}}</h6>
+					    <span class="media">{{v.media}}</span>
+						<p><img src="img/comment.png" class="comment"/>
+							<span>{{v.comment_count_show}}</span>
+						</p>
+					</div>
+		 		</a>
+		 		<img src="img/remove.png" class="remove" ng-click="remove($index)"/>
+		 	</li>
+		</ol>
+	</div>
+</div>

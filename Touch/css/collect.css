@@ -1,0 +1,13 @@
+.container header { display: flex; align-items: center; position: relative; }
+.container header a img { width: 0.8rem; margin: 0 0.5rem 0 1rem; }
+.container header span { font-size: 0.7rem; color: #333; }
+.container header .sous { position: absolute; right: 1rem; }
+.container header .sous i { font-size: 0.7rem; color: #999; }
+.container section { color: #333; font-size: 0.7rem; }
+.container section .head { width: 16rem; height: 1.3rem; display: flex; padding: 0 0.5rem; margin-top: 0.75rem; box-sizing: border-box; }
+.container section .head span { flex: 1; height: 100%; line-height: 1.3rem; background: #F4E482; text-align: center; color: #666; }
+.container section .head span:first-child { border-bottom-left-radius: 0.3rem; border-top-left-radius: 0.3rem; }
+.container section .head span:last-child { border-bottom-right-radius: 0.3rem; border-top-right-radius: 0.3rem; }
+.container section .head .active { color: #333; background: #FCDF19; font-weight: bold; }
+
+/*# sourceMappingURL=collect.css.map */

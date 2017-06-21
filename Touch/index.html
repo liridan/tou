@@ -1,89 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 	<head>
 		<meta charset="UTF-8">
-		<title>触控时讯-主界面</title>
+		<title>触控时讯</title>
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-		<script type="text/javascript" src="js/angular.js"></script>
+		
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/homepage.css" />
+		<link rel="stylesheet" href="css/user.css"/>
+		<link rel="stylesheet" href="css/subscription.css" />
+		<link rel="stylesheet" href="css/circle.css" />
+		
+		<script type="text/javascript" src="js/angular.js" ></script>
+		<script type="text/javascript" src="js/angular-route.js" ></script>
 		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
 		<script type="text/javascript" src="js/zepto.min.js"></script>
+		
+		<script type="text/javascript" src="js/rout.js" ></script>
 		<script type="text/javascript" src="js/index.js"></script>
-		<script type="text/javascript" src="js/subscription.js"></script>
+		
+		<script type="text/javascript" src="module/homepage.js" ></script>
+		<script type="text/javascript" src="module/circle.js" ></script>
+		
 		<script>
 			document.getElementsByTagName("html")[0].style.fontSize = innerWidth / 16 + "px";
 		</script>
-		<link rel="stylesheet" href="css/bootstrap.css" />
-		<link rel="stylesheet" href="css/index.css" />
-		<link rel="stylesheet" href="css/homepage.css" />
-		<link rel="stylesheet" type="text/css" href="css/subscription.css"/>
+		
 	</head>
 	<body>
 		<div class="container">
-			<header>
-				<ul class="head">
-					<li class="active" id="topline">
-						<span>头条</span>
-					</li>
-					<li id="subscribe"><span>订阅</span></li>
-					<li id="search">
-						<a href="search.html"><i class="glyphicon glyphicon-search"></i></a>
-					</li>
-				</ul>
-			</header>
-			<section ng-app="app">
-				<ul class="home-con">
-					<li class="topline">
-					</li>
-					<li class="scribe" ng-controller="subsp">
-                          <div class="msg">
-             	             <h4>我的订阅</h4>
-                          </div>
-                          <ul class="list alllist">
-                          	<li ng-repeat="v in list" ng-click="chan($index)">
-                          		<span>{{v}}</span>
-                          		<img src="img/liridan/remove.png" >
-                          	</li>
-                          </ul>
-                          <div class="msg">
-             	             <h4>订阅推荐</h4>
-                          </div>
-                          <ul class="list2 alllist" >
-                          	<li ng-repeat="v in list2" ng-click="chan1($index)">
-                          		<span>{{v}}</span>
-                          		<img src="img/liridan/true.png" >
-                          	</li>
-                          </ul>                          
-					</li>
-				</ul>
+			<section>
+				<ng-view></ng-view>
 			</section>
-			<footer>
+			<footer ng-controller="main">
 				<ul id="footlist">
 					<li class="active">
-						<a href="index.html">
+						<a href="#!homepage">
 							<p></p>
 							<span>时讯</span>	
 						</a>
 					</li>
 					<li>
-						<a href="circle.html">
+						<a href="#!circle">
 							<p></p>
 							<span>视频</span>	
 						</a>
 						
 					</li>
 					<li>
-						<a href="video.html">
+						<a href="#!video">
 							<p></p>
 							<span>直播</span>	
 						</a>
 						
 					</li>
-					<li >
-						<a>
+					<li>
+						<a href="#!user">
 							<p></p>
 							<span>我的</span>	
 						</a>
-						
 					</li>
 				</ul>
 			</footer>

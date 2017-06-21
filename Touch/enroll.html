@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/enroll.css" />
+		<script type="text/javascript" src="js/enroll.js" ></script>
+		<script>
+			document.getElementsByTagName("html")[0].style.fontSize = innerWidth / 16 + "px";
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<a href="index.html"><img src="img/retrun.png"/></a>
+				<p>马上登录</p>
+			</header>
+			<section>
+				<div class="nav">
+					<ul>
+						<li>
+							<span></span>
+							<input type="text" placeholder="QQ账号/手机号码" id="txt"/>
+						</li>
+						<li>
+							<span class="password"></span>
+							<input type="text" placeholder="密码" id="password"/>
+						</li>
+					</ul>
+					<div class="submit" id="btn">登录</div>
+				</div>
+				<div class="forget">
+					<a id="zhuc">注册</a>
+					<a href="forgetpassword.html">忘记密码?</a></div>
+			</section>
+			<div class="other">
+				<span>其他登录方式</span>
+				<p>
+					<img src="img/QQ.png" />
+					<img src="img/wechat.png" />
+					<img src="img/sina.png" />
+				</p>
+			</div>
+			<div id="register">
+				<header>
+					<a id="denglu"><img src="img/retrun.png"/></a>
+					<p>快速注册登录</p>
+				</header>
+				<section>
+					<div class="nav">
+						<ul>
+							<li>
+								<span></span>
+								<input type="text" placeholder="手机号码" id="phone"/>
+								<p class="send">发送验证码</p>
+							</li>
+							<li>
+								<input type="text" placeholder="验证码" class="indent"/>
+							</li>
+							<li>
+								<span class="password"></span>
+								<input type="text" placeholder="6-12位数字/字母/符号" id="zcword" />
+							</li>
+							<li>
+								<input type="text" placeholder="确认密码" class="indent" id="indent"/>
+							</li>
+						</ul>
+						<div class="submit" id="firstsub">注册</div>
+					</div>
+					<p class="last">未注册号码验证后直接登录</p>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

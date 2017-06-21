@@ -1,26 +1,84 @@
 $yellow: #FCDF19;
 $gray: #818181;
-$bg:#EBEBEB;
+$bg: #EBEBEB;
 $c: 20;
 
 %gdw {
     width: 16rem;
     height: 100%;
 }
-
-.home-con {
-    flex: 1;
-    width: 32rem;
-    height: 100%;
-    display: flex;
-    .topline {
-        @extend %gdw;
-        background: #ccc;
-        overflow-y: auto;
-    }
-    .scribe {
-        @extend %gdw;
-        background: #F4F4F4;
-        overflow-y: auto;
+.topline {
+    width: 16rem;
+    background: #ccc;
+   margin-top: 2.5rem;
+    .news{
+        width: 16rem;
+        background: #fff;
+        li {
+            align-items: center;
+            border-bottom: 1px solid #f1f1f1;
+            position: relative;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                padding: 15/$c+rem 10/$c+rem;
+                box-sizing: border-box;
+            }
+            img {
+                width: 4rem;
+                height: 3rem;
+            }
+            .info {
+                position: relative;
+                height: 3rem;
+                flex: 1;
+                margin-left:10/$c+rem;
+                box-sizing: border-box;
+                font-size: 8/$c+rem;
+                color: #666;
+                h6 {
+                    font-size: 11/$c+rem;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    color: #333;
+                }
+                .media {
+                    margin-right: 30/$c+rem;
+                    position: absolute;
+                    bottom: 16/$c+rem;
+                }
+                p {
+                    width: 100%;
+                    height: 16/$c+rem;
+                    position: absolute;
+                    bottom: 0;
+                    display: flex;
+                    align-items: center;
+                }
+                img {
+                    width: 12/$c+rem;
+                    height: 12/$c+rem;
+                    display: inline-block;
+                }
+                
+                .comment {
+                    width: 14/$c+rem;
+                    height: 14/$c+rem;
+                }
+            }
+          .remove {
+                position: absolute;
+                width: 12/$c+rem;
+                height: 12/$c+rem;
+                right:10/$c+rem;
+                z-index: 99;
+                bottom: 16/$c+rem;
+            }  
+        }
+        
     }
 }

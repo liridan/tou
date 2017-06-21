@@ -33,10 +33,21 @@ $c: 20;
 .fl-rt {
     float: right;
 }
-header {
-  display: flex; 
-  align-items: center;
-  position: relative; 
+.container{
+    height: 100%;
+}
+header{
+            width: 16rem;
+            height: 2.5rem;
+            background: $yellow;
+            border-bottom: 1px solid #aaa;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            color: #333;
+            display: flex;
+            align-items: center;
      #back{
          background: url(../img/liridan/retrun.png) no-repeat;
          background-size: 100% 100%;
@@ -84,9 +95,11 @@ header {
        }      
 }
 section {
+    height: 100%;
+    background: $bg;
     .entsk {
         flex: 1;
-        width: 32rem;
+        width:16rem;
         height: 100%;
         display: flex;
         position: relative;

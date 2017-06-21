@@ -1,0 +1,31 @@
+<div class="scribe" ng-controller="subsp">
+	<header>
+		<ul class="head">
+			<li id="topline">
+				<a href="#!homepage">头条</a>
+			</li>
+			<li id="subscribe" class="active"><a>订阅</a></li>
+			<li id="search">
+				<a href="search.html"><img src="img/homes.png"/></a>
+			</li>
+		</ul>
+	</header>
+	<div class="msg">
+		<h4>我的订阅</h4>
+	</div>
+	<ul class="list alllist">
+		<li ng-repeat="v in list" ng-click="chan($index)">
+			<span>{{v}}</span>
+			<img src="img/liridan/remove.png">
+		</li>
+	</ul>
+	<div class="msg">
+		<h4>订阅推荐</h4>
+	</div>
+	<ul class="list2 alllist">
+		<li ng-repeat="v in list2" ng-click="chan1($index)">
+			<span>{{v}}</span>
+			<img src="img/liridan/true.png">
+		</li>
+	</ul>
+</div>

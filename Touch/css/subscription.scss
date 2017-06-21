@@ -1,18 +1,19 @@
 $yellow: #FCDF19;
 $gray: #818181;
-$c: 20;
+$c:20;
 
 %gdw {
     width: 16rem;
     height: 100%;
 }
-
-section {
-    .home-con {
-        margin-left: -16rem;
-        overflow-y: auto;
+section{
+    background: #f4f4f4;
+}
         .scribe {
             height: auto;
+            background: #f4f4f4;
+            @extend %gdw;
+            margin-top: 2.5rem;
             .msg {
                 padding: 40/$c+rem 30/$c+rem 0;
                 box-sizing: border-box;
@@ -57,7 +58,4 @@ section {
                     }
                 }
             }
-
         }
-    }
-}

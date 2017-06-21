@@ -1,0 +1,35 @@
+<div ng-controller="circont">
+<header>
+	<ul class="head">
+		<li class="active" id="topline">
+			<span>热点</span>
+		</li>
+		<li id="subscribe"></li>
+		<li id="search">
+			<a href="search.html"><img src="img/homes.png" /></a>
+		</li>
+	</ul>
+	
+</header>
+
+	<ul class="circlelist">
+		
+		<li ng-repeat="w in arr">
+			<div class="broadcast fl-lt">
+				<a href="//m.v.qq.com/cover/c/{{w.cid}}.html?{{w.vid}}">
+					<img src="img/bofa.png" />
+				</a>
+				<img src="{{w.pic_453x254}}"/>
+			</div>
+			<div class="info">
+				<p>
+					<span class="time fl-lt">{{w.publishdate_1}}</span>
+					<span class="number fl-rt">{{w.view}}次播放</span>
+				</p>	
+			</div>
+			
+			<h5>{{w.title}}</h5>
+		</li>
+	</ul>
+	
+</div>
